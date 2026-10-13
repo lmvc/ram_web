@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="Explora las estructuras y funciones de la célula procariota mediante un modelo 3D interactivo.">
+  <title>Explora la célula procariota</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      color: #203047;
+      background: #f4f7fa;
+    }
+
+    header {
+      background: #123b50;
+      color: white;
+      padding: 32px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.8rem, 5vw, 2.7rem);
+    }
+
+    main {
+      width: min(100% - 32px, 1000px);
+      margin: 28px auto;
+    }
+
+    section {
+      background: white;
+      margin-bottom: 22px;
+      padding: 24px;
+      border-radius: 14px;
+      box-shadow: 0 3px 14px #18344a12;
+    }
+
+    h2 { color: #176b70; }
+
+    .viewer {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      border-radius: 10px;
+      background: #e8eef2;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .parts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .part {
+      padding: 16px;
+      border: 1px solid #dce5ea;
+      border-radius: 10px;
+    }
+
+    .part h3 { margin-top: 0; }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #526574;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Explora la célula procariota</h1>
+    <p>UG-ENMS - Biologia 1, 3ro C</p>
+    <p>Ramsés Valentín Hurtado</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Modelo tridimensional</h2>
+      <p>
+        Gira el modelo, acerca la imagen y explora las anotaciones
+        para conocer las partes de una célula procariota.
+      </p>
+
+      <div class="viewer">
+        <iframe
+          title="Modelo 3D de una célula procariota"
+          src="https://sketchfab.com/models/f152e3a5af9844648be5ec0c5b33d4e5/embed?annotations_visible=1&annotation=1&annotation_cycle=3"
+          allow="autoplay; fullscreen; xr-spatial-tracking"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <p>
+        Modelo de Célula Procariota
+        <!-- <a href="https://sketchfab.com/alangarcia256821"
+           target="_blank" rel="noopener noreferrer">
+          Alan García S.
+        </a>,
+        en Sketchfab. -->
+      </p>
+    </section>
+
+    <section>
+      <h2>¿Qué es una célula procariota?</h2>
+      <p>
+        Es una célula que carece de un núcleo delimitado por una
+        membrana. Su material genético se localiza en una región
+        denominada nucleoide. Las bacterias y las arqueas son
+        organismos procariotas.
+      </p>
+    </section>
+
+    <section>
+      <h2>Principales estructuras</h2>
+
+      <div class="parts">
+        <article class="part">
+          <h3>Nucleoide</h3>
+          <p>Contiene la mayor parte del material genético de la célula.</p>
+        </article>
+
+        <article class="part">
+          <h3>Membrana plasmática</h3>
+          <p>Delimita la célula y regula el paso de sustancias.</p>
+        </article>
+
+        <article class="part">
+          <h3>Pared celular</h3>
+          <p>Contribuye a mantener la forma y proteger la célula.</p>
+        </article>
+
+        <article class="part">
+          <h3>Ribosomas</h3>
+          <p>Fabrican proteínas a partir de la información genética.</p>
+        </article>
+
+        <article class="part">
+          <h3>Citoplasma</h3>
+          <p>Es el medio interno donde ocurren numerosas reacciones celulares.</p>
+        </article>
+
+        <article class="part">
+          <h3>Flagelo</h3>
+          <p>Es una estructura de locomoción presente en algunas bacterias.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- <section>
+      <h2>Actividad de aprendizaje</h2>
+      <p>Explora el modelo e intenta responder:</p>
+      <ol>
+        <li>¿Dónde se localiza el ADN?</li>
+        <li>¿Qué estructura regula el intercambio de sustancias?</li>
+        <li>¿Qué función tienen los ribosomas?</li>
+        <li>¿Todas las bacterias poseen flagelo?</li>
+      </ol>
+    </section> -->
+  </main>
+
+  <footer>
+    UG-ENMS - Biologia 1, 3ro C. Ramsés Valentín Hurtado
+  </footer>
+</body>
+</html>
